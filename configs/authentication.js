@@ -1,6 +1,6 @@
 import * as yup from "yup";
 import useToggle from "../hooks/misc/useToggle";
-import { useAuthContext } from "../contexts/AuthContext";
+import { useAuthContext } from "../contexts/authContext";
 import { useForms } from "../hooks/misc/useForms";
 import AuthAction from "../hooks/actions/useAuthActions";
 

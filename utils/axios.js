@@ -1,11 +1,11 @@
-import axios from 'axios'
+import axios from "axios";
 
-export default axios.create({
-    baseURL: 'http://127.0.0.1:8000/api',
-    headers: {
-        'X-Requested-With': 'XMLHttpRequest',
-        // 'Accept': 'application/json',
-        // 'Authorization':'Bearer 26|h2TGBllqdpZuAx7l7uM0WbH4nIr5jqwo4BGQpQQH'
-    },
-    withCredentials: true,
-})
+const axiosInstance = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
+  headers: {
+    "X-Requested-With": "XMLHttpRequest",
+  },
+  withCredentials: true,
+});
+
+export default axiosInstance;

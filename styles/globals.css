@@ -6,34 +6,28 @@
 
 
 @layer base {
-    /* ===== Scrollbar CSS ===== */
-    /* Firefox */
-    body {
-        scrollbar-width: auto;
-        scrollbar-color: #fcfcfc #f1f2f4;
-    }
 
-    /* Chrome, Edge, and Safari */
-    body::-webkit-scrollbar {
-        width: 12px;
-    }
-/* 
-    body::-webkit-scrollbar-track {
-        background: #f1f2f4;
-        background: linear-gradient(
-                to bottom,
-                rgb(247, 113, 24),
-                rgb(220, 46, 46),
-                rgb(238, 73, 238)
-        );
-    /* } */
+       /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #e6e6e6 #ffffff;
+  }
 
-    body::-webkit-scrollbar-thumb {
-        background: transparent;
-        box-shadow: 0 0 0 100000vh #f1f2f4ff;
-        border-radius: 10px;
-        border: 2px solid #f1f2f4;
-    }
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 
     .floating {
         animation-name: floating;

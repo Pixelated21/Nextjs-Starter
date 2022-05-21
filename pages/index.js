@@ -1,9 +1,9 @@
-import React from 'react'
+export default function Index(){
 
-const index = () => {
   return (
-    <div>index</div>
+    <div>
+    Landing Page
+    </div>
   )
 }
 
-export default index

@@ -7,7 +7,8 @@ export const AuthContext = createContext(undefined);
 const initialState = {
   userInfo: {},
   isAuth: false,
-  userRole: false
+  userRole: false,
+  authToken: false
 };
 
 const ACTIONS = {
